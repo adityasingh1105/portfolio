@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product listing policy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+  	#hero{
+    display:table;
+    width: 100%;
+    height: 5vh;
+    background: url(./images/hero-2.jpg) top center;
+    background-size: cover;
+    margin-top: 30px;
+}
+@media (min-width: 1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+
+#hero .hero-logo{
+    margin: 20px;
+    max-width: 100%;
+}
+#hero .hero-container{
+    
+    display: table-cell;
+    margin: 0;
+    padding:0;
+    text-align: center;
+    vertical-align: middle;
+}
+#hero h1{
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: black;
+}
+p{
+  text-align: justify;
+  margin-left: 450px;
+  margin-right: 450px;
+  padding: 10px;
+}
+@font-face {
+    font-family: 'call';
+    src:
+url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj0gSRoAAAEoAAAAVmNtYXDnEOdVAAABiAAAADZnbHlm2RnXRAAAAcgAAACMaGVhZBa++dcAAADQAAAANmhoZWEHewNrAAAArAAAACRobXR4B+j/4gAAAYAAAAAIbG9jYQBGAAAAAAHAAAAABm1heHABDwA1AAABCAAAACBuYW1lThXSzwAAAlQAAAIBcG9zdEre3N4AAARYAAAAMwABAAADUv9qAFoEAP/i//4D6gABAAAAAAAAAAAAAAAAAAAAAgABAAAAAQAAKiku/V8PPPUACwPoAAAAANnp2pMAAAAA2enak//i/+MD6gPpAAAACAACAAAAAAAAAAEAAAACACkAAwAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQP0AZAABQAAAnoCvAAAAIwCegK8AAAB4AAxAQIAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA5wDnAANS/2oAWgPpAJYAAAABAAAAAAAABAAAAAPo/+IAAAACAAAAAwAAABQAAwABAAAAFAAEACIAAAAEAAQAAQAA5wD//wAA5wD//wAAAAEABAAAAAEAAAAAAAAARgAAAAP/4v/jA+oD6QANABsAKAAAAQ8BFzc1NjQvAS4BIgYFFgQ3JwYmJy4BNycGEhMVBxc3NjQvAS4BIyIDIANLuEsVFVEJGxwa/cqYAUONvFifS01LH7xHeUVOu0sVFVEKGg4dAVkDS7hLAxY4FlEMCgltmnlHvB9LTkqfWLyN/r4CSANLu1EWOBZRDAoAAAASAN4AAQAAAAAAAAABAAAAAQAAAAAAAQAEAAEAAQAAAAAAAgAHAAUAAQAAAAAAAwAEAAwAAQAAAAAABAAEABAAAQAAAAAABQALABQAAQAAAAAABgAEAB8AAQAAAAAACgAsACMAAQAAAAAACwASAE8AAwABBAkAAAACAGEAAwABBAkAAQAIAGMAAwABBAkAAgAOAGsAAwABBAkAAwAIAHkAAwABBAkABAAIAIEAAwABBAkABQAWAIkAAwABBAkABgAIAJ8AAwABBAkACgBYAKcAAwABBAkACwAkAP8gY2FsbFJlZ3VsYXJjYWxsY2FsbFZlcnNpb24gMS4wY2FsbEZvbnQgZ2VuZXJhdGVkIHVzaW5nIFN5bmNmdXNpb24gTWV0cm8gU3R1ZGlvd3d3LnN5bmNmdXNpb24uY29tACAAYwBhAGwAbABSAGUAZwB1AGwAYQByAGMAYQBsAGwAYwBhAGwAbABWAGUAcgBzAGkAbwBuACAAMQAuADAAYwBhAGwAbABGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIAB1AHMAaQBuAGcAIABTAHkAbgBjAGYAdQBzAGkAbwBuACAATQBlAHQAcgBvACAAUwB0AHUAZABpAG8AdwB3AHcALgBzAHkAbgBjAGYAdQBzAGkAbwBuAC4AYwBvAG0AAAAAAgAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQIBAwAJdGVsZXBob25lAAAA) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .e-btn.e-link.sf-icon-telephone{
+    text-decoration: none;
+    color: black;
+    font-family: 'call' !important;
+    font-size: 45px;
+  }
+  .shape{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+  }
+  </style>
+  <body onload="show()">
+    <div class="container">
+    <div class="content">
+      <div class="nav">
+        <div class="logo"></div>
+        <div class="disp-logo">
+          <div class="null"></div>
+          <div class="logo-txt">RAULSON</div>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search Mobiles, Fashion, Medicines and more..." /><span class="src-icon"><i
+              class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div class="sell">
+          <a href="#">
+            <div class="become-seller">
+              <div id="sell-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div id="sell-text">Become a Seller</div>
+            </div>
+          </a>
+        </div>
+        <div class="login">
+          <img src="images/profile-user.png" alt="">
+          <h6>Login</h6>
+        </div>
+        <div>
+        
+        <a class="e-btn e-link sf-icon-telephone" href="tel:180000000"><span>&#9742;</span></a>
+    </div>
+        <div class="cartreturn">
+          <!-- retrn and order -->
+          <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+      </div>
+      <div id="searchln"><input type="text" placeholder="search" /></div>
+      <div class="options">
+        <ul>
+          <div>
+          <img src="images/Grocery.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Grocery</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Kitchen.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Kitchen</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Electronics1.jpg" class="shape" style="margin-left: 20px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Electronics</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Appliance.jpg" class="shape" style="margin-left: 20px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Appliances</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Mobile.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Mobiles</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Kids.jpg" class="shape" style="padding-right: 8px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Kids</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Fashion.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Fashion</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Medicine (1).jpg" class="shape" style="margin-left: 15px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Medicines</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Beauty.jpg" class="shape" style="margin-left: 30px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Beauty &amp; more..</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+        </ul>
+      </div>
+        <section id="hero">
+        <div class="hero-container">
+            <div class="hero-logo">
+                <h1 class="font-weight-bold">Product listing Policy</h1>
+            </div>
+            </div>
+    </section>
+        <div>
+        <p>
+        	General Terms
+        </p>
+        <p style="margin-left: 500px;">1. You may not post any content or sell any item on Raulson Platform that
+is restricted or prohibited by a federal, state or local law in India.</p>
+        <p style="margin-left: 500px;">2. Posting any content or listing any item below are specifically prohibited
+unless expressly permitted in writing by Raulson. HOWEVER, THIS IS
+NOT INTENDED TO BE EXHAUSTIVE AND MERELY INDICATIVE.</p>
+        <p>In addition to the list of prohibited and restricted items we also prohibit the posting of
+items which may not be restricted or prohibited by law but are nonetheless
+controversial including:</p>
+        <p style="margin-left: 470px;">(a) Items that encourage illegal activities (e.g. lock pick tools, synthetic urine for
+cheating drugs tests);<br><br>
+(b) Items that are racially, religiously or ethnically derogator, or that promote
+hatred, violence, racial, or religious intolerance;<br><br>
+(c) Giveaways, lotteries, raffles, or contests;<br><br>
+(d) Stocks, bonds, investments interest, and other securities;<br><br>
+(e) Pornographic materials or items that are sexual in nature;<br><br>
+(f) Items that do not offer a physical product or services for sale, such as digital
+currencies and advertisements solely for the purpose of collecting user
+information.<br><br>
+(g) Raulson reserve the right impose additional restrictions and prohibitions.</p>
+        <p>Prohibited and Controlled Items</p>
+        <p style="margin-left: 470px;">1. ILLICIT DRUGS, PRECURSORS AND DRUG PARAPHERNALIA<br><br>
+We expressly forbids any and all listing or sale or</p>
+ <p style="margin-left: 600px;">(a) Narcotics<br><br>
+(b) Psychotropic drugs<br><br>
+(c) Natural drugs<br><br>
+(d) Synthetic drugs,<br><br>
+(e) Steroids and other controlled substances.</p>
+<p>Such activity can result in your account being delisted further, the listing or sale of all
+drug precursor chemicals is also strictly prohibited. Also Drug paraphernalia,
+including all items that are primarily intended or designed for use in manufacturing,
+concealing, or using a controlled substance, are strictly forbidden the site.</p>
+<p style="margin-left: 470px;">2. FLAMBLE, EXPLOSIVE AND HAZARDOUS CHEMICALS<br><br>
+The posting of explosives and related ignition and detonation equipment,
+radioactive substance, toxic and poisonous chemicals is strictly prohibited. Such
+activity can result in your account being delisted.<br><br>
+The posting, offering for sale, or offering for purchase of hazardous materials
+(such as the categories of dangerous goods as defined under the International
+Maritime Dangerous Good Code) are forbidden on our website. Further any
+ozone depleting substance are not permitted to be listed.</p>
+<p style="margin-left: 470px;">3. FIREARMS AND AMMUNITIONS<br><br>
+Any service, instruction, process, or aid for producing any biological, chemical, or
+nuclear weapons, or other weapons of Mass Destruction (WWD) or known
+associated agents is strictly prohibited by national or domestic law according
+prohibited on the site.<br><br>
+Any violation of this policy will result in the notification of government authorities by
+us and also your account being delisted.<br><br>
+The posting of, offering for sale, or offering for purchase of any arms, munitions,
+military ordnance, weapons (including explosive weapons), and/or any related parts
+and components (whether integral or otherwise) is strictly prohibited. Such activity
+can result in your account being delisted.</p>
+<p style="margin-left: 470px;">4. Weapons<br><br>
+We do not permit the posting, offering for sale, or offering for purchase of weapons
+that can incapacitate or causing serious physical harm to others (e.g. stun guns,
+batons, crossbows)<br><br>
+While listing of most knives and other cutting instruments is permitted, switchblade
+knives, gravity knifes, knuckleduster (bladed or not), bladed handled device, and
+disguised knives are prohibited.<br><br>
+We shall maintain absolute discretion over what items are appropriate and may
+cause removal of a listing that it deems as a weapon.</p>
+<p style="margin-left: 470px;">5. GOVERNMENT, LAW ENFORCEMENT AND MILITARY ISSUED ITEMS<br><br>
+The following items are not permitted to be listed:<br><br>
+(a)Articles of clothing or identification that claim to be, or appear similar to official
+government uniforms.<br><br>
+(b)Law enforcements badges of official law enforcement equipment from any public
+authority, including badges issued by the government of any country.<br><br>
+
+(c) Military decorations, medals and awards, in addition to items with substantially
+similar designs.<br><br>
+(d) Police uniforms, police insignia and police vehicles may not be posted unless
+they are obsolete and in no way resemble current issue police uniforms, police
+insignia and police vehicles. This fact must be clearly stated within the posting
+description.</p>
+<p style="margin-left: 470px;">6. ILLEGAL SERVICES<br><br>
+Any listing claiming to provide governments services and related products are strictly
+prohibited. Examples include:<br><br>
+(a) Official governments-issues identification documents, such as birth
+certificates, driving license, passport and visas.<br><br>
+(b) Completed applications for the abovementioned documents.<br><br>
+(c) Any materials, equipment or processes designed for use in the production of
+government-issued identification documents (e.g. driving license holograms,
+passport booklets).<br><br>
+We prohibit listings that offer financial services, including money transfers,
+issuing bank guarantees and letters of credit, loans, fundraising and funding for
+person investments purposes, etc.<br><br>
+We also prohibit listings for the sole purpose of collecting user information or
+raising money.<br><br>
+6. CIRCUMVENT DEVICES AND OTHER EQUIPMENT USED FOR ILLICIT
+PUPOSES<br><br>
+Descrambles and other items that can be used to gain unauthorized access to
+television programming (such as satellite and cable TV), internet access,
+telephone, data or other protected, restricted, or premium services.
+Devices designed to intentionally block, jam or interface with authorized radio
+communications, such as cellular and personal communication services, police
+radar, global positioning systems (GPS) and wireless networking services (WIFI)
+The listing or sale of spy equipment and devices for interception of wire, oral and
+electronics communications.<br><br>
+Bank card readers and “skimmers”.<br><br>
+Any and null unauthorized circumvention devices not included in the above are
+also strictly prohibited.<br><br>
+11. COLLECTION, ARTIFACTS AND PRECIOUS METALS<br><br>
+We strictly forbids the sale and purchase or currency, coins, banknotes, stocks,
+bonds, money orders, credit and debit cards, investment interest, currency in
+digital or any intangible form (e.g. crypto-currency), as well as the equipment and
+
+materials used to produce such items. Counterfeits of these identified articles,
+legal tender and stamps are strictly prohibited. Reproduction or replicas of coins
+as collectible items must be clearly marked with the word “Copy”, “Reproduction”
+or “Replica” and comply with all relevant local laws.<br><br>
+Artifacts, Cultural relics, historical grave markets, and related items are protected
+under the laws may not be posted or sold on our website.<br><br>
+12. HUMAN PARTS, HUMAN REMAINS AND PROTECTED FLORA AND
+FAUNA<br><br>
+We prohibit the listing of human body parts and remains. Examples of such
+prohibited items include, but are not limited to: organs, bones, blood, sperm, and
+eggs. Items made of human hair, such as wings for commercial uses, are
+permitted. The listing or sale of any species (including any animal parts such as
+pelts, skins, internal organs, teeth, claws, shells, bones, tusk, ivory, logs, roots
+and other parts) protected by the convention on international Trade in
+Endangered species of wild Fauna and Flora (CITIES) or any other local law or
+regulation is strictly forbidden. The listings or sale or products made from cats,
+dogs and bears, as well as any processing equipment, is prohibited.<br><br>
+The listing or sale of poultry, livestock and pets for commercial purposes is
+permitted. For the avoidance of doubt, live animals prohibited from being listed.<br><br>
+13. Offensive Material and information Detrimental to National Security.<br><br>
+Any and all publication and other media containing state or information
+detrimental to national security or public order are prohibited. Such activity can
+result in your account being delisted. Any information supporting or advocating
+infringement of national sovereignty, terrorist organization or discrimination on
+grounds of race, sex, or religion is strictly prohibited. Postings that are ethnically
+or racially offensive are prohibited on the site. Sellers and purchase must ensure
+that any wording used portrays appropriate sensitivity to those who might read it
+in their postings, and when they are offering or purchasing potentially offensives
+items or services. Materials advocating, promoting or otherwise supporting
+fascism, Nazism and other extreme ideologies are strictly prohibited.<br><br>
+14. TOBACCO PRODUCTS<br><br>
+The posting of tobacco products, including but not limited to cigars, cigarettes
+tobacco, pipe tobacco, hookah tobacco, chewing tobacco and tobacco leaf id
+prohibited.<br><br>
+Changes to this Product Listing<br><br>
+We may update our Product Listing Policy from time to time. We will notify you of
+any changes by posting the new Product Listing Policy on this Page.
+We will let you know via email and/or a prominent notice on our Service, prior to
+the change becoming effective and update the “effective date” at the top of this
+Product Listing Policy.<br><br>
+
+You are advised to review this product Listing Policy Periodically for any
+changes. Changes to this product Listing Policy are effective when they are
+posted on this page.</p>
+
+        </div>
+
+
+
+        
+    <!-- footer -->
+    <!-- footer -->
+    <!-- footer -->
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="f-logo f-about">
+            <a href="#"><img src="images/Logo.png" alt=""></a>
+            <div>Raulson</div>
+            <div>Har Vyavsay ka sathi</div>
+          </div>
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">About</a></div>
+            <a href="contact us.html">contact us</a>
+            <a href="about us.html">about us</a>
+            <a href="#">Stories</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Help</a></div>
+            <a href="payment.html">Payment</a>
+            <a href="shipping.html">Shipping</a>
+            <a href="cancellation.html">Cancellation & Return</a>
+            <a href="faq.html">FAQ</a>
+            <div style="color: black;">dummy</div>
+            
+          </div>
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Social</a></div>
+            <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"> <i class="fa-brands fa-square-twitter"></i> Twitter</a>
+            <a href="#"> <i class="fa-brands fa-square-youtube"></i> YouTube</a>
+            <a href="#"> <i class="fa-brands fa-square-facebook"></i> Facebook</a>
+            <div style="color: black;">dummy</div>
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Policy</a></div>
+            <a href="return policy.html">Return Policy</a>
+            <a href="undelivered policy.html">Undelivered Shipping Policy</a>
+            <a href="warehouse policy.html">Warehouse Return Policy</a>
+            <a href="product listing policy.html">Product Listing Policy</a>
+            <div style="color: black;">dummy</div>
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Terms of use</a></div>
+            <a href="privacy policy.html">Privacy Policy</a>
+            <a href="infringment policy.html">Infringment policy</a>
+            <a href="anti policy.html">Anti Counterfeiting Policy</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+          </div>
+
+
+
+
+        </div>
+        <div class="f-bottom">
+          <p>Copyright &copy; 2022 Raulson. All Right Reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="ecommerce.js"></script>
+  </body>
+</html>

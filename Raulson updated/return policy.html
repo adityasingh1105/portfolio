@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>return policy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+  	#hero{
+    display:table;
+    width: 100%;
+    height: 5vh;
+    background: url(./images/hero-2.jpg) top center;
+    background-size: cover;
+    margin-top: 30px;
+}
+@media (min-width: 1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+
+#hero .hero-logo{
+    margin: 20px;
+    max-width: 100%;
+}
+#hero .hero-container{
+    
+    display: table-cell;
+    margin: 0;
+    padding:0;
+    text-align: center;
+    vertical-align: middle;
+}
+#hero h1{
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: black;
+}
+p{
+  text-align: justify;
+  margin-left: 450px;
+  margin-right: 450px;
+  padding: 10px;
+}
+@font-face {
+    font-family: 'call';
+    src:
+url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj0gSRoAAAEoAAAAVmNtYXDnEOdVAAABiAAAADZnbHlm2RnXRAAAAcgAAACMaGVhZBa++dcAAADQAAAANmhoZWEHewNrAAAArAAAACRobXR4B+j/4gAAAYAAAAAIbG9jYQBGAAAAAAHAAAAABm1heHABDwA1AAABCAAAACBuYW1lThXSzwAAAlQAAAIBcG9zdEre3N4AAARYAAAAMwABAAADUv9qAFoEAP/i//4D6gABAAAAAAAAAAAAAAAAAAAAAgABAAAAAQAAKiku/V8PPPUACwPoAAAAANnp2pMAAAAA2enak//i/+MD6gPpAAAACAACAAAAAAAAAAEAAAACACkAAwAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQP0AZAABQAAAnoCvAAAAIwCegK8AAAB4AAxAQIAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA5wDnAANS/2oAWgPpAJYAAAABAAAAAAAABAAAAAPo/+IAAAACAAAAAwAAABQAAwABAAAAFAAEACIAAAAEAAQAAQAA5wD//wAA5wD//wAAAAEABAAAAAEAAAAAAAAARgAAAAP/4v/jA+oD6QANABsAKAAAAQ8BFzc1NjQvAS4BIgYFFgQ3JwYmJy4BNycGEhMVBxc3NjQvAS4BIyIDIANLuEsVFVEJGxwa/cqYAUONvFifS01LH7xHeUVOu0sVFVEKGg4dAVkDS7hLAxY4FlEMCgltmnlHvB9LTkqfWLyN/r4CSANLu1EWOBZRDAoAAAASAN4AAQAAAAAAAAABAAAAAQAAAAAAAQAEAAEAAQAAAAAAAgAHAAUAAQAAAAAAAwAEAAwAAQAAAAAABAAEABAAAQAAAAAABQALABQAAQAAAAAABgAEAB8AAQAAAAAACgAsACMAAQAAAAAACwASAE8AAwABBAkAAAACAGEAAwABBAkAAQAIAGMAAwABBAkAAgAOAGsAAwABBAkAAwAIAHkAAwABBAkABAAIAIEAAwABBAkABQAWAIkAAwABBAkABgAIAJ8AAwABBAkACgBYAKcAAwABBAkACwAkAP8gY2FsbFJlZ3VsYXJjYWxsY2FsbFZlcnNpb24gMS4wY2FsbEZvbnQgZ2VuZXJhdGVkIHVzaW5nIFN5bmNmdXNpb24gTWV0cm8gU3R1ZGlvd3d3LnN5bmNmdXNpb24uY29tACAAYwBhAGwAbABSAGUAZwB1AGwAYQByAGMAYQBsAGwAYwBhAGwAbABWAGUAcgBzAGkAbwBuACAAMQAuADAAYwBhAGwAbABGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIAB1AHMAaQBuAGcAIABTAHkAbgBjAGYAdQBzAGkAbwBuACAATQBlAHQAcgBvACAAUwB0AHUAZABpAG8AdwB3AHcALgBzAHkAbgBjAGYAdQBzAGkAbwBuAC4AYwBvAG0AAAAAAgAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQIBAwAJdGVsZXBob25lAAAA) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .e-btn.e-link.sf-icon-telephone{
+    text-decoration: none;
+    color: black;
+    font-family: 'call' !important;
+    font-size: 45px;
+  }
+  .shape{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+  }
+  </style>
+  <body onload="show()">
+    <div class="container">
+    <div class="content">
+      <div class="nav">
+        <div class="logo"></div>
+        <div class="disp-logo">
+          <div class="null"></div>
+          <div class="logo-txt">RAULSON</div>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search Mobiles, Fashion, Medicines and more..." /><span class="src-icon"><i
+              class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div class="sell">
+          <a href="#">
+            <div class="become-seller">
+              <div id="sell-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div id="sell-text">Become a Seller</div>
+            </div>
+          </a>
+        </div>
+        <div class="login">
+          <img src="images/profile-user.png" alt="">
+          <h6>Login</h6>
+        </div>
+        <div>
+        
+        <a class="e-btn e-link sf-icon-telephone" href="tel:180000000"><span>&#9742;</span></a>
+    </div>
+        <div class="cartreturn">
+          <!-- retrn and order -->
+          <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+      </div>
+      <div id="searchln"><input type="text" placeholder="search" /></div>
+      <div class="options">
+        <ul>
+          <div>
+          <img src="images/Grocery.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Grocery</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Kitchen.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Kitchen</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Electronics1.jpg" class="shape" style="margin-left: 20px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Electronics</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Appliance.jpg" class="shape" style="margin-left: 20px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Appliances</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Mobile.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Mobiles</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Kids.jpg" class="shape" style="padding-right: 8px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Kids</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Fashion.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Fashion</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Medicine (1).jpg" class="shape" style="margin-left: 15px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Medicines</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Beauty.jpg" class="shape" style="margin-left: 30px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Beauty &amp; more..</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+        </ul>
+      </div>
+        <section id="hero">
+        <div class="hero-container">
+            <div class="hero-logo">
+                <h1 class="font-weight-bold">Return Policy</h1>
+            </div>
+            </div>
+    </section>
+        <div>
+        <p>
+        	Returns is a scheme provided by respective sellers directly under this policy in terms of which the
+option of exchange, replacement and/ or refund is offered by the respective sellers to you. All
+products listed under a particular category may not have the same returns policy. For all
+products, the returns/replacement policy provided on the product page shall prevail over the
+general returns policy. Do refer the respective item&#39;s applicable return/replacement policy on the
+product page for any exceptions to this returns policy and the table below.
+        </p>
+        <p>
+        	1. The Buyer may raise a Return Request on the Platform for any one of
+the following reasons:</p>
+<p style="margin-left: 500px;">1. Product(s) is physically damaged or is defective, including
+damage to the outer box delivered;</p>
+<p style="margin-left: 500px;">2. warranty issues or quality related issues with respect to the
+Product delivered;</p>
+<p style="margin-left: 500px;">3. wrong Product or the Product is not matching the description
+or specifications mentioned on the listing page on the
+Platform;</p>
+<p style="margin-left: 500px;">4. part of the Order/ Products is found to be missing due to
+reasons attributable to the Seller.</p>
+
+<p>Without prejudice to the foregoing, the Buyer may raise a Return
+Request for the following reasons:</p>
+<p style="margin-left: 500px;">5. part of the Order/ Products are found to be missing due to any
+reasons attributable to the logistics; or
+<p style="margin-left: 500px;">6. Product was damaged in-transit; or</p>
+<p style="margin-left: 500px;">7. Any other logistics related issues.
+        </p>
+        <p>
+        	2. At the time of making a Return Request on the Platform, Buyer will be
+required to provide appropriate supporting documentation/ proof
+including without limitation:</p>
+<p style="margin-left: 500px;">1. images of the Product(s) indicating the issue in the Product/
+shipment delivered. The images need to capture the following:
+(a) the shipping label with Order ID; (b) Order details; (c) packed
+shipment; (d) issue observed by the Buyer in the Product; (e)
+damages to the Product; and/or (f) the IMEI number (in case
+the Product is a mobile phone);</p>
+<p style="margin-left: 500px;">2. unboxing/ normal video clip indicating the issues in the
+Product/ shipment delivered. The video clip needs to capture
+all sides of the package, order details, shipping label, quantity
+of the Product, damages in the Product, IMEI number (in case
+of mobile phones), any tampering with the outer box etc.;</p>
+<p>3. copy of bill/ tax invoice for the Product received.
+If any further information or clarification is required from the Buyer,
+we will contact the Buyer.
+        </p>
+        <p>Depending on the category of Product, the Buyer may raise a Return
+Request for any of the issues as set forth under paragraph A.2 above
+within the timelines prescribed below:</p>
+<p>Food-FMCG : 7 days from the date of delivery of shipment</p>
+<p>Hardware &amp; Sanitary ware: 7days from the date of delivery of shipment</p>
+<p>Clothing: 7days from the date of delivery of shipment</p>
+<p>Food FMCG : 7days from the date of delivery of shipment</p>
+<p>IT &amp; Electronics : 7days from the date of delivery of shipment</p>
+<p>Accessories and Consumer Electronics : 7days from the date of delivery of shipment</p>
+<p>Smart phones &amp; Feature Phones : 2days from the date of delivery of shipment</p>
+
+<p>Home &amp; Kitchen : 7days from the date of delivery of shipment</p>
+<p>Footwear : 7 days from the date of delivery of shipment</p>
+<p>Toys &amp; Baby care: 7 days from the date of delivery of shipment</p>
+<p>Stationary &amp; Office Supplies : 7 days from the date of delivery of shipment</p>
+<p>Pharmaceutical: 7 days from the date of delivery of shipment</p>
+<p>1. In certain cases where the seller is unable to process a replacement for any reason whatsoever,
+a refund will be given.</p>
+<p>2. In cases where a product accessory is found missing/damaged/defective, the seller may either
+process a replacement of the particular accessory or issue an eGV for an amount equivalent to
+the price of the accessory, at the seller’s discretion.</p>
+<p>3. During open box deliveries, while accepting your order, if you received a different or a damaged
+product, you will be given a refund (on the spot refunds for cash-on-delivery orders). Once you
+have accepted an open box delivery, no return request will be processed, except for
+manufacturing defects. In such cases, these category-specific replacement/return general
+conditions will be applicable. Click here to know more about Open Box Delivery</p>
+<p>4. For products where installation is provided by Flipkart&#39;s service partners, do not open the product
+packaging by yourself. Flipkart authorised personnel shall help in unboxing and installation of the
+product.</p>
+<p>5. For Furniture, any product-related issues will be checked by authorised service personnel (free of
+cost) and attempted to be resolved by replacing the faulty/ defective part of the product. Full
+replacement will be provided only in cases where the service personnel opines that replacing the
+faulty/defective part will not resolve the issue.</p>
+<p>
+&#39;In case the product was not delivered and you received a delivery confirmation email/SMS,
+report the issue within 7 days from the date of delivery confirmation for the seller to investigate.&#39;</p>
+        </div>
+
+
+
+        
+    <!-- footer -->
+    <!-- footer -->
+    <!-- footer -->
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="f-logo f-about">
+            <a href="#"><img src="images/Logo.png" alt=""></a>
+            <div>Raulson</div>
+            <div>Har Vyavsay ka sathi</div>
+          </div>
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">About</a></div>
+            <a href="contact us.html">contact us</a>
+            <a href="about us.html">about us</a>
+            <a href="#">Stories</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Help</a></div>
+            <a href="payment.html">Payment</a>
+            <a href="shipping.html">Shipping</a>
+            <a href="cancellation.html">Cancellation & Return</a>
+            <a href="faq.html">FAQ</a>
+            <div style="color: black;">dummy</div>
+            
+          </div>
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Social</a></div>
+            <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"> <i class="fa-brands fa-square-twitter"></i> Twitter</a>
+            <a href="#"> <i class="fa-brands fa-square-youtube"></i> YouTube</a>
+            <a href="#"> <i class="fa-brands fa-square-facebook"></i> Facebook</a>
+            <div style="color: black;">dummy</div>
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Policy</a></div>
+            <a href="return policy.html">Return Policy</a>
+            <a href="undelivered policy.html">Undelivered Shipping Policy</a>
+            <a href="warehouse policy.html">Warehouse Return Policy</a>
+            <a href="product listing policy.html">Product Listing Policy</a>
+            <div style="color: black;">dummy</div>
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Terms of use</a></div>
+            <a href="privacy policy.html">Privacy Policy</a>
+            <a href="infringment policy.html">Infringment policy</a>
+            <a href="anti policy.html">Anti Counterfeiting Policy</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+          </div>
+
+
+
+
+        </div>
+        <div class="f-bottom">
+          <p>Copyright &copy; 2022 Raulson. All Right Reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="ecommerce.js"></script>
+  </body>
+</html>

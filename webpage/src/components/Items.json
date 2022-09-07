@@ -28,7 +28,7 @@
   {
     "pid": 3,
     "name": "Margarita",
-    "price": 699,
+    "price": 69,
     "size": "Medium",
     "image": "/images/Margarita.png",
     "createdAt": {
@@ -41,7 +41,7 @@
   {
     "pid":4,
     "name": "Carbonara",
-    "price": 999,
+    "price": 45,
     "size": "Large",
     "image": "/images/Carbonara.png",
     "createdAt": {
@@ -80,7 +80,7 @@
   {
     "pid": 7,
     "name": "Double peperoni",
-    "price": 1399,
+    "price": 139,
     "size": "Large",
     "image":  "/images/DoublePeperoni.png",
     "createdAt": {

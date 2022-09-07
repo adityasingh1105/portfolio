@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>seller login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+
+.button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 1}
+
+  .form-column{
+    display: inline-block;
+    padding: 100px;
+  }
+
+  .form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+input[name="lname"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[name="lname"]:focus {
+  border: 3px solid #555;
+}  
+
+@font-face {
+    font-family: 'call';
+    src:
+url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj0gSRoAAAEoAAAAVmNtYXDnEOdVAAABiAAAADZnbHlm2RnXRAAAAcgAAACMaGVhZBa++dcAAADQAAAANmhoZWEHewNrAAAArAAAACRobXR4B+j/4gAAAYAAAAAIbG9jYQBGAAAAAAHAAAAABm1heHABDwA1AAABCAAAACBuYW1lThXSzwAAAlQAAAIBcG9zdEre3N4AAARYAAAAMwABAAADUv9qAFoEAP/i//4D6gABAAAAAAAAAAAAAAAAAAAAAgABAAAAAQAAKiku/V8PPPUACwPoAAAAANnp2pMAAAAA2enak//i/+MD6gPpAAAACAACAAAAAAAAAAEAAAACACkAAwAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQP0AZAABQAAAnoCvAAAAIwCegK8AAAB4AAxAQIAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA5wDnAANS/2oAWgPpAJYAAAABAAAAAAAABAAAAAPo/+IAAAACAAAAAwAAABQAAwABAAAAFAAEACIAAAAEAAQAAQAA5wD//wAA5wD//wAAAAEABAAAAAEAAAAAAAAARgAAAAP/4v/jA+oD6QANABsAKAAAAQ8BFzc1NjQvAS4BIgYFFgQ3JwYmJy4BNycGEhMVBxc3NjQvAS4BIyIDIANLuEsVFVEJGxwa/cqYAUONvFifS01LH7xHeUVOu0sVFVEKGg4dAVkDS7hLAxY4FlEMCgltmnlHvB9LTkqfWLyN/r4CSANLu1EWOBZRDAoAAAASAN4AAQAAAAAAAAABAAAAAQAAAAAAAQAEAAEAAQAAAAAAAgAHAAUAAQAAAAAAAwAEAAwAAQAAAAAABAAEABAAAQAAAAAABQALABQAAQAAAAAABgAEAB8AAQAAAAAACgAsACMAAQAAAAAACwASAE8AAwABBAkAAAACAGEAAwABBAkAAQAIAGMAAwABBAkAAgAOAGsAAwABBAkAAwAIAHkAAwABBAkABAAIAIEAAwABBAkABQAWAIkAAwABBAkABgAIAJ8AAwABBAkACgBYAKcAAwABBAkACwAkAP8gY2FsbFJlZ3VsYXJjYWxsY2FsbFZlcnNpb24gMS4wY2FsbEZvbnQgZ2VuZXJhdGVkIHVzaW5nIFN5bmNmdXNpb24gTWV0cm8gU3R1ZGlvd3d3LnN5bmNmdXNpb24uY29tACAAYwBhAGwAbABSAGUAZwB1AGwAYQByAGMAYQBsAGwAYwBhAGwAbABWAGUAcgBzAGkAbwBuACAAMQAuADAAYwBhAGwAbABGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIAB1AHMAaQBuAGcAIABTAHkAbgBjAGYAdQBzAGkAbwBuACAATQBlAHQAcgBvACAAUwB0AHUAZABpAG8AdwB3AHcALgBzAHkAbgBjAGYAdQBzAGkAbwBuAC4AYwBvAG0AAAAAAgAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQIBAwAJdGVsZXBob25lAAAA) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .e-btn.e-link.sf-icon-telephone{
+    text-decoration: none;
+    color: black;
+    font-family: 'call' !important;
+    font-size: 45px;
+  }
+  .shape{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+  }
+  </style>
+  <body onload="show()">
+    <div class="container">
+    <div class="content">
+      <div class="nav">
+        <div class="logo"></div>
+        <div class="disp-logo">
+          <div class="null"></div>
+          <div class="logo-txt">RAULSON</div>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search Mobiles, Fashion, Medicines and more..." /><span class="src-icon"><i
+              class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div class="sell">
+          <a href="#">
+            <div class="become-seller">
+              <div id="sell-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div id="sell-text">Become a Seller</div>
+            </div>
+          </a>
+        </div>
+        <div class="login">
+          <img src="images/profile-user.png" alt="">
+          <h6>Login</h6>
+        </div>
+        <div>
+        
+        <a class="e-btn e-link sf-icon-telephone" href="tel:180000000"><span>&#9742;</span></a>
+    </div>
+        <div class="cartreturn">
+          <!-- retrn and order -->
+          <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+      </div>
+      <div id="searchln"><input type="text" placeholder="search" /></div>
+
+      <section>
+<img src="images/Sell online.jpg" width=100%>
+</section>
+<div class="form-type">
+<div class="form-column">
+<img src="images/Side of Sell.jpg" style="margin-bottom: 70px;">
+</div>
+<div class="form-column">
+<form>
+<div class="form-inline">
+  <input type="number" id="fname" name="lname" placeholder="Enter your number.." class= "column">
+  <button type="submit">Enter</button>
+  </div>
+  <br>
+  <p><h5>Didn't recieve OTP? &ensp; &ensp;<a href="#">Resend OTP</a></h5></p>
+  <br>
+  <input type="email" id="lname" name="lname" placeholder="Enter Email id">
+  <br>
+  <input type="password" id="lname" name="lname" placeholder="create Password"><i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+  <br>
+ <input type="password" id="lname" name="lname" placeholder="Confirm Password">
+ <br>
+ <p><h5>Why are you looking for sell on Raulson?</h5></p>
+ <br>
+ <label for="cars" style="font-weight:bold;";>Choose&ensp;</label>
+  <select name="cars" id="cars">
+    <option value="volvo">Categories</option>
+    <option value="saab">Category 2</option>
+    <option value="opel">Category 3</option>
+    <option value="audi">Category 4</option>
+  </select>
+  <input type="number" id="lname" name="lname" placeholder="Enter GSTIN number">
+  <br>
+   <p><h5>GSTIN is required to sell products on raulson</h5></p>
+   <br>
+   <br>
+    <p><h5>By continuing, I agree to raulson policy</h5></p>
+    <br>
+    <button class="button">Register/Continue</button>
+</form>
+</div>
+</div>
+        
+    <!-- footer -->
+    <!-- footer -->
+    <!-- footer -->
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="f-logo f-about">
+            <a href="#"><img src="images/Logo.png" alt=""></a>
+            <div>Raulson</div>
+            <div>Har Vyavsay ka sathi</div>
+          </div>
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">About</a></div>
+            <a href="contact us.html">contact us</a>
+            <a href="about us.html">about us</a>
+            <a href="#">Stories</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Help</a></div>
+            <a href="payment.html">Payment</a>
+            <a href="shipping.html">Shipping</a>
+            <a href="cancellation.html">Cancellation & Return</a>
+            <a href="faq.html">FAQ</a>
+            <div style="color: black;">dummy</div>
+            
+          </div>
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Social</a></div>
+            <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"> <i class="fa-brands fa-square-twitter"></i> Twitter</a>
+            <a href="#"> <i class="fa-brands fa-square-youtube"></i> YouTube</a>
+            <a href="#"> <i class="fa-brands fa-square-facebook"></i> Facebook</a>
+            <div style="color: black;">dummy</div>
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Policy</a></div>
+            <a href="return policy.html">Return Policy</a>
+            <a href="undelivered policy.html">Undelivered Shipping Policy</a>
+            <a href="warehouse policy.html">Warehouse Return Policy</a>
+            <a href="product listing policy.html">Product Listing Policy</a>
+            <div style="color: black;">dummy</div>
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Terms of use</a></div>
+            <a href="privacy policy.html">Privacy Policy</a>
+            <a href="infringment policy.html">Infringment policy</a>
+            <a href="anti policy.html">Anti Counterfeiting Policy</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+          </div>
+
+
+
+
+        </div>
+        <div class="f-bottom">
+          <p>Copyright &copy; 2022 Raulson. All Right Reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="ecommerce.js"></script>
+  </body>
+</html>

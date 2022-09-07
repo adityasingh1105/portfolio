@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+  	#hero{
+    display:table;
+    width: 30%;
+    height: 5vh;
+    background: url(./images/hero-2.jpg) top center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-left: 500px;
+}
+@media (min-width: 1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+
+#hero .hero-logo{
+    margin: 20px;
+    max-width: 100%;
+}
+#hero .hero-container{
+	background: grey;
+	border-radius: 5px;
+    width: 60%
+    display: table-cell;
+    margin: 0;
+    padding:0;
+    text-align: center;
+    vertical-align: middle;
+}
+#hero h1{
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: black;
+}
+p{
+  text-align: justify;
+  margin-left: 450px;
+  margin-right: 450px;
+  padding: 10px;
+}
+@font-face {
+    font-family: 'call';
+    src:
+url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj0gSRoAAAEoAAAAVmNtYXDnEOdVAAABiAAAADZnbHlm2RnXRAAAAcgAAACMaGVhZBa++dcAAADQAAAANmhoZWEHewNrAAAArAAAACRobXR4B+j/4gAAAYAAAAAIbG9jYQBGAAAAAAHAAAAABm1heHABDwA1AAABCAAAACBuYW1lThXSzwAAAlQAAAIBcG9zdEre3N4AAARYAAAAMwABAAADUv9qAFoEAP/i//4D6gABAAAAAAAAAAAAAAAAAAAAAgABAAAAAQAAKiku/V8PPPUACwPoAAAAANnp2pMAAAAA2enak//i/+MD6gPpAAAACAACAAAAAAAAAAEAAAACACkAAwAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQP0AZAABQAAAnoCvAAAAIwCegK8AAAB4AAxAQIAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA5wDnAANS/2oAWgPpAJYAAAABAAAAAAAABAAAAAPo/+IAAAACAAAAAwAAABQAAwABAAAAFAAEACIAAAAEAAQAAQAA5wD//wAA5wD//wAAAAEABAAAAAEAAAAAAAAARgAAAAP/4v/jA+oD6QANABsAKAAAAQ8BFzc1NjQvAS4BIgYFFgQ3JwYmJy4BNycGEhMVBxc3NjQvAS4BIyIDIANLuEsVFVEJGxwa/cqYAUONvFifS01LH7xHeUVOu0sVFVEKGg4dAVkDS7hLAxY4FlEMCgltmnlHvB9LTkqfWLyN/r4CSANLu1EWOBZRDAoAAAASAN4AAQAAAAAAAAABAAAAAQAAAAAAAQAEAAEAAQAAAAAAAgAHAAUAAQAAAAAAAwAEAAwAAQAAAAAABAAEABAAAQAAAAAABQALABQAAQAAAAAABgAEAB8AAQAAAAAACgAsACMAAQAAAAAACwASAE8AAwABBAkAAAACAGEAAwABBAkAAQAIAGMAAwABBAkAAgAOAGsAAwABBAkAAwAIAHkAAwABBAkABAAIAIEAAwABBAkABQAWAIkAAwABBAkABgAIAJ8AAwABBAkACgBYAKcAAwABBAkACwAkAP8gY2FsbFJlZ3VsYXJjYWxsY2FsbFZlcnNpb24gMS4wY2FsbEZvbnQgZ2VuZXJhdGVkIHVzaW5nIFN5bmNmdXNpb24gTWV0cm8gU3R1ZGlvd3d3LnN5bmNmdXNpb24uY29tACAAYwBhAGwAbABSAGUAZwB1AGwAYQByAGMAYQBsAGwAYwBhAGwAbABWAGUAcgBzAGkAbwBuACAAMQAuADAAYwBhAGwAbABGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIAB1AHMAaQBuAGcAIABTAHkAbgBjAGYAdQBzAGkAbwBuACAATQBlAHQAcgBvACAAUwB0AHUAZABpAG8AdwB3AHcALgBzAHkAbgBjAGYAdQBzAGkAbwBuAC4AYwBvAG0AAAAAAgAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQIBAwAJdGVsZXBob25lAAAA) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .e-btn.e-link.sf-icon-telephone{
+    text-decoration: none;
+    color: black;
+    font-family: 'call' !important;
+    font-size: 45px;
+  }
+  .shape{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+  }
+  </style>
+  <body onload="show()">
+    <div class="container">
+    <div class="content">
+      <div class="nav">
+        <div class="logo"></div>
+        <div class="disp-logo">
+          <div class="null"></div>
+          <div class="logo-txt">RAULSON</div>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search Mobiles, Fashion, Medicines and more..." /><span class="src-icon"><i
+              class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div class="sell">
+          <a href="#">
+            <div class="become-seller">
+              <div id="sell-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div id="sell-text">Become a Seller</div>
+            </div>
+          </a>
+        </div>
+        <div class="login">
+          <img src="images/profile-user.png" alt="">
+          <h6>Login</h6>
+        </div>
+        <div>
+        
+        <a class="e-btn e-link sf-icon-telephone" href="tel:180000000"><span>&#9742;</span></a>
+    </div>
+        <div class="cartreturn">
+          <!-- retrn and order -->
+          <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+      </div>
+      <div id="searchln"><input type="text" placeholder="search" /></div>
+      <div class="options">
+        <ul>
+          <div>
+          <img src="images/Grocery.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Grocery</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Kitchen.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Kitchen</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Electronics1.jpg" class="shape" style="margin-left: 20px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Electronics</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Appliance.jpg" class="shape" style="margin-left: 20px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Appliances</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Mobile.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Mobiles</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Kids.jpg" class="shape" style="padding-right: 8px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Kids</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Fashion.jpg" class="shape" style="margin-left: 5px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Fashion</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Medicine (1).jpg" class="shape" style="margin-left: 15px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Medicines</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+          <div>
+          <img src="images/Beauty.jpg" class="shape" style="margin-left: 30px;">
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Beauty &amp; more..</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+          </div>
+        </ul>
+      </div>
+        <section id="hero">
+        <div class="hero-container">
+            <div class="hero-logo">
+                <h1 class="font-weight-bold">Payment</h1>
+            </div>
+            </div>
+    </section>
+        <div>
+        <p>How do I pay for a Raulson purchase?</p>
+        <p style="background-color:#FADCD2;">
+        	Raulson offers you multiple payment methods. Whatever your online mode of payment, you can
+rest assured that Raulson trusted payment gateway partners use secure encryption technology
+to keep your transaction details confidential at all times.
+        </p>
+        <p style="background-color:#FADCD2;">
+        	Raulson also accepts payments made using Visa, MasterCard, Maestro and American Express
+credit/debit cards in India.
+        </p>
+        <p>Are there any hidden charges (Octroi or Sales Tax) when I make a purchase on
+Raulson?</p>
+        <p style="background-color:#FADCD2;">
+        	There are NO hidden charges when you make a purchase on Raulson. The prices listed for all the
+items are final and all-inclusive. The price you see on the product page is exactly what you pay.
+        </p>
+        <p style="background-color:#FADCD2;">
+          Delivery charges may be extra depending on the seller policy. Please check individual seller for
+the same. In case of seller WS Retail, the ₹50 delivery charge is waived off on orders worth ₹500
+and over.
+        </p>
+        <p>AWhat is Cash on Delivery?</p>
+        <p style="background-color:#FADCD2;">
+          If you are not comfortable making an online payment on Raulson.com, you can opt for the Cash
+on Delivery (C-o-D) payment method instead. With C-o-D you can pay in cash at the time of actual
+delivery of the product at your doorstep, without requiring you to make any advance payment
+online.
+        </p>
+        <p style="background-color:#FADCD2;">The maximum order value for a Cash on Delivery (C-o-D) payment is 5000. It is strictly a cash-
+only payment method.</p>
+
+        </div>
+
+
+
+        
+    <!-- footer -->
+    <!-- footer -->
+    <!-- footer -->
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="f-logo f-about">
+            <a href="#"><img src="images/Logo.png" alt=""></a>
+            <div>Raulson</div>
+            <div>Har Vyavsay ka sathi</div>
+          </div>
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">About</a></div>
+            <a href="contact us.html">contact us</a>
+            <a href="about us.html">about us</a>
+            <a href="#">Stories</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Help</a></div>
+            <a href="payment.html">Payment</a>
+            <a href="shipping.html">Shipping</a>
+            <a href="cancellation.html">Cancellation & Return</a>
+            <a href="faq.html">FAQ</a>
+            <div style="color: black;">dummy</div>
+            
+          </div>
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Social</a></div>
+            <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"> <i class="fa-brands fa-square-twitter"></i> Twitter</a>
+            <a href="#"> <i class="fa-brands fa-square-youtube"></i> YouTube</a>
+            <a href="#"> <i class="fa-brands fa-square-facebook"></i> Facebook</a>
+            <div style="color: black;">dummy</div>
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Policy</a></div>
+            <a href="return policy.html">Return Policy</a>
+            <a href="undelivered policy.html">Undelivered Shipping Policy</a>
+            <a href="warehouse policy.html">Warehouse Return Policy</a>
+            <a href="product listing policy.html">Product Listing Policy</a>
+            <div style="color: black;">dummy</div>
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Terms of use</a></div>
+            <a href="privacy policy.html">Privacy Policy</a>
+            <a href="infringment policy.html">Infringment policy</a>
+            <a href="anti policy.html">Anti Counterfeiting Policy</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+          </div>
+
+
+
+
+        </div>
+        <div class="f-bottom">
+          <p>Copyright &copy; 2022 Raulson. All Right Reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="ecommerce.js"></script>
+  </body>
+</html>

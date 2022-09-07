@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment</title>
+  </head>
+  <body>
+   <div class="container-sm"> <label for="fname">People:</label></div>
+   <div class="container-sm"><input type="text" id="peopleid" name="fname"/><br /><br /></div>
+    <div class="container-sm"><label for="fname">Buses:</label></div>
+        <div class="container-sm"><input type="text" id="busesid" name="fname" /><br /><br /></div>
+        <div class="container-sm"><button type="button" onclick="do_allocation()">Result</button>
+          <input type="button" value="Clear Value" onClick="location.href=location.href"></p></div>
+
+        <div class="card">
+          <div id="loadData" class="container">
+         
+          </div>
+        </div>
+    <script type="text/javascript">
+var loadData= "" ;
+      function do_allocation() {
+        var people = document.getElementById("peopleid").value;
+        var buses = document.getElementById("busesid").value;
+        var defualtPeopleCount = 1;
+        const newpeoplecount = [];
+        const peoplewithbuses = [];
+        for (var i = 1; i <= buses; i++) {
+          if (people > 1) //here i check people value is greater then 1 or not because if only one people then it follow only one bus and remaning buus will be 0
+          {
+            if (i <= 2) //Now i check buses count will less then 3 or not because first default bus will be 1 as per question
+             {
+              newpeoplecount.push(defualtPeopleCount); //here i added the default pepole in array
+              peoplewithbuses.push(
+                i + " bus added " + defualtPeopleCount + "  people"
+              ); 
+            } else { // Now i check buses count will greater then 2 or not 
+              //getting the total sum of array values
+              const sum = newpeoplecount.reduce(
+                (partialSum, a) => partialSum + a,
+                0
+              ); 
+              var currentpeople = newpeoplecount[i - 3] + newpeoplecount[i - 2];// getting the last 2 value from the array
+              var remainingpeople = people - sum;
+              if (currentpeople < remainingpeople) // if last two busses capacity is less then reamaning people or not 
+              {
+                newpeoplecount.push(currentpeople);
+                peoplewithbuses.push(
+                  i + " bus added " + currentpeople + "   people"
+                );
+              } else { // if reamaning people is less then current buss capacity or not 
+                if (sum >= people) { //here checked array value sum is greater then people input value than remaning busses people capacity will be 0
+                  currentpeople = 0;
+                  newpeoplecount.push(currentpeople);
+                  peoplewithbuses.push(
+                    i + " bus added " + currentpeople + "   people"
+                  );
+                } else { // if reamaning people is less then current buss capacity than push into array
+                  newpeoplecount.push(remainingpeople);
+                  peoplewithbuses.push(
+                    i + " bus added " + remainingpeople + " people"
+                  );
+                }
+              }
+            }
+          } else { //if input people value is eqaul to 1 then add a default for the first bus
+            if (people == i) {
+              newpeoplecount.push(defualtPeopleCount);
+              peoplewithbuses.push(
+                i + " bus added " + defualtPeopleCount + "  people"
+              );
+            } else { //than remaning busses people capacity will be 0
+              var currentpeople = 0;
+              newpeoplecount.push(currentpeople);
+              peoplewithbuses.push(
+                i + " bus added " + currentpeople + "   people"
+              );
+            }
+          }
+        }
+  //now here i add the value into html 
+         const fruits = peoplewithbuses;
+        fruits.forEach(myFunction);
+        document.getElementById("loadData").innerHTML =loadData;
+      }
+      function myFunction(item, index) {
+        //console.log(item);
+        loadData=loadData+"<p>"+item+"</p>";
+      }
+
+      
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
