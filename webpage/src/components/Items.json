@@ -1,0 +1,132 @@
+ [
+  {
+    "pid": 1,
+    "name": "Four cheese",
+    "price": 799,
+    "size": "Medium",
+    "image": "/images/FourCheese.png",
+    "createdAt": {
+      "$date": "2021-04-30T15:53:23.393Z"
+    },
+    "updatedAt": {
+      "$date": "2021-04-30T15:53:23.393Z"
+    }
+  },
+  {
+    "pid": 2,
+    "name": "Chicken mushroom",
+    "price": 699,
+    "size": "Small",
+    "image": "/images/ChickenMushroom.png",
+    "createdAt": {
+      "$date": "2021-04-30T15:53:48.741Z"
+    },
+    "updatedAt": {
+      "$date": "2021-04-30T15:53:48.741Z"
+    }
+  },
+  {
+    "pid": 3,
+    "name": "Margarita",
+    "price": 699,
+    "size": "Medium",
+    "image": "/images/Margarita.png",
+    "createdAt": {
+      "$date": "2021-04-30T15:55:36.364Z"
+    },
+    "updatedAt": {
+      "$date": "2021-04-30T15:55:36.364Z"
+    }
+  },
+  {
+    "pid":4,
+    "name": "Carbonara",
+    "price": 999,
+    "size": "Large",
+    "image": "/images/Carbonara.png",
+    "createdAt": {
+      "$date": "2021-04-30T15:55:54.276Z"
+    },
+    "updatedAt": {
+      "$date": "2021-04-30T15:55:54.276Z"
+    }
+  },
+  {
+    "pid": 5,
+    "name": "Mix BBQ",
+    "price": 1299,
+    "size": "Large",
+    "image": "/images/MixBBQ.png",
+    "createdAt": {
+      "$date": "2021-04-30T15:56:09.573Z"
+    },
+    "updatedAt": {
+      "$date": "2021-04-30T15:56:09.573Z"
+    }
+  },
+  {
+    "pid": 6,
+    "name": "Mushroom",
+    "price": 499,
+    "size": "Small",
+    "image":  "/images/Mushroom.png",
+    "createdAt": {
+      "$date": "2021-04-30T15:56:35.142Z"
+    },
+    "updatedAt": {
+      "$date": "2021-04-30T15:56:35.142Z"
+    }
+  },
+  {
+    "pid": 7,
+    "name": "Double peperoni",
+    "price": 1399,
+    "size": "Large",
+    "image":  "/images/DoublePeperoni.png",
+    "createdAt": {
+      "$date": "2021-04-30T15:57:04.665Z"
+    },
+    "updatedAt": {
+      "$date": "2021-04-30T15:57:04.665Z"
+    }
+  },
+  {
+    "pid": 8,
+    "name": "Chicken Premier",
+    "price": 899,
+    "size": "Medium",
+    "image":  "/images/ChickenPremier.png",
+    "createdAt": {
+      "$date": "2021-04-30T15:57:28.319Z"
+    },
+    "updatedAt": {
+      "$date": "2021-04-30T15:57:28.319Z"
+    }
+  },
+  {
+    "pid":9,
+    "name": "Caramel Pineapple",
+    "price": 799,
+    "size": "Small",
+    "image":  "/images/CaramelPineapple.png",
+    "createdAt": {
+      "$date": "2021-04-30T15:57:56.632Z"
+    },
+    "updatedAt": {
+      "$date": "2021-04-30T15:57:56.632Z"
+    }
+  },
+  {
+    "pid": 10,
+    "name": "Havana Special",
+    "price": 599,
+    "size": "Small",
+    "image":  "/images/HavanaSpecial.png",
+    "createdAt": {
+      "$date": "2021-04-30T15:59:28.146Z"
+    },
+    "updatedAt": {
+      "$date": "2021-04-30T15:59:28.146Z"
+    }
+  }
+]
